@@ -1,0 +1,90 @@
+<section class="hero">
+  <div class="hero-image">
+    <img src="/images/hero-woman.jpg" alt="Woman sleeping peacefully" />
+  </div>
+  <div class="hero-content">
+    <h1>6 Reasons Tariff-Free Sheets Are the Answer to Your Night Sweats</h1>
+    <p>
+      NASA-inspired cooling, silver-infused freshness—without the luxury price
+      hike.
+    </p>
+    <div class="down-arrow"></div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    padding: 27px 35px 23.26px 34px;
+    color: #fff;
+    background: #001a72;
+  }
+  .hero-content h1 {
+    font-weight: 450;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.4px;
+  }
+  .hero-content p {
+    font-weight: 390;
+    font-size: 17.6px;
+    line-height: 22px;
+    letter-spacing: 0px;
+  }
+  .down-arrow {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    animation: bounce 1.5s infinite;
+    cursor: pointer;
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: rotate(45deg) translateY(0);
+    }
+    50% {
+      transform: rotate(45deg) translateX(8px) translateY(8px);
+    }
+  }
+  @media (min-width: 900px) {
+    .hero {
+      min-height: 480px;
+      align-items: stretch;
+    }
+    .hero-image,
+    .hero-content {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-content {
+      text-align: left;
+      padding: 4rem 3rem;
+      flex-direction: column;
+    }
+    .hero-content h1 {
+      font-size: 38px;
+    }
+  }
+</style>
