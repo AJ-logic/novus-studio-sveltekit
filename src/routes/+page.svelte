@@ -7,9 +7,11 @@
 </script>
 
 <Header />
-<main>
-  <HeroSection />
-  <ReasonsSections />
-  <CTASection />
-</main>
-<Footer />
+<div class="page-container">
+  <main>
+    <HeroSection />
+    <ReasonsSections />
+    <CTASection />
+  </main>
+  <Footer />
+</div>

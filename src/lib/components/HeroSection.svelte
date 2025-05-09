@@ -23,6 +23,7 @@
     width: 100%;
     height: 227px;
     object-fit: cover;
+    object-position: 10%;
   }
   .hero-content {
     display: flex;
@@ -67,24 +68,23 @@
     }
   }
   @media (min-width: 900px) {
-    .hero {
-      min-height: 480px;
-      align-items: stretch;
-    }
-    .hero-image,
-    .hero-content {
-      width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .hero-image img {
+      height: 470px;
     }
     .hero-content {
-      text-align: left;
-      padding: 4rem 3rem;
-      flex-direction: column;
+      padding: 44px 326px 34px;
     }
     .hero-content h1 {
       font-size: 38px;
+      line-height: 46px;
+      letter-spacing: -0.54px;
+      margin-bottom: 24px;
+    }
+    .hero-content p {
+      font-size: 25px;
+      line-height: 22px;
+      letter-spacing: 0px;
+      margin-bottom: 16px;
     }
   }
 </style>

@@ -16,21 +16,4 @@
     flex-direction: column;
     gap: 0;
   }
-
-  @media (min-width: 768px) {
-    .reason-block {
-      flex-direction: row;
-      align-items: center;
-    }
-    .reason-block.reverse {
-      flex-direction: row-reverse;
-    }
-    .reason-image,
-    .reason-content {
-      width: 50%;
-    }
-    .reason-content {
-      padding: 4rem;
-    }
-  }
 </style>

@@ -1,9 +1,13 @@
 <header class="header">
-  <img src="/images/logo.png" alt="Logo" class="logo" />
+  <a href="#">
+    <img src="/images/logo.png" alt="Logo" class="logo" />
+  </a>
 </header>
 
 <style>
   .header {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +19,5 @@
   .logo {
     width: 114;
     height: 26;
-  }
-  @media (min-width: 768px) {
   }
 </style>

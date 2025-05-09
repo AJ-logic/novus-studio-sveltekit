@@ -1,7 +1,7 @@
 <script>
   export let index;
   export let reason;
-  export let reverse = index % 2 ? true : false;
+  export let reverse = index % 2 ? false : true;
 </script>
 
 <div class="reason-block {reverse ? 'reverse' : ''}">
@@ -18,12 +18,12 @@
   .reason-block {
     display: flex;
     flex-direction: column;
-    color: #333b47;
-    background: var(--color-light-blue, #e4f2fb);
-  }
-  .reverse {
     color: #fff;
     background: var(--color-blue, #00227d);
+  }
+  .reason-block.reverse {
+    color: #333b47;
+    background: var(--color-light-blue, #e4f2fb);
   }
   .reason-image img {
     width: 100%;
@@ -35,10 +35,10 @@
     flex-direction: column;
   }
   .reason-content h2 {
-    color: var(--color-blue, #00227d);
+    color: #fff;
   }
   .reverse h2 {
-    color: #fff;
+    color: var(--color-blue, #00227d);
   }
   .reason-block:nth-child(1) .reason-content {
     gap: 17px;
@@ -118,5 +118,80 @@
   .reason-block:nth-child(6) .reason-content p {
     font-size: 15.6px;
     font-weight: 300;
+  }
+
+  @media (min-width: 768px) {
+    .reason-block {
+      flex-direction: row;
+      align-items: center;
+    }
+    .reason-block.reverse {
+      flex-direction: row-reverse;
+    }
+    .reason-image,
+    .reason-content {
+      width: 50%;
+    }
+    .reason-content {
+      padding: 4rem;
+    }
+    .reason-image img,
+    .reason-block:nth-child(6) .reason-image img {
+      height: 609px;
+    }
+    .reason-block:nth-child(1) .reason-content {
+      gap: 14px;
+      padding: 184px 112px 188px 112px;
+    }
+    .reason-block:nth-child(1) .reason-content h2,
+    .reason-block:nth-child(2) .reason-content h2,
+    .reason-block:nth-child(3) .reason-content h2,
+    .reason-block:nth-child(4) .reason-content h2,
+    .reason-block:nth-child(5) .reason-content h2,
+    .reason-block:nth-child(6) .reason-content h2 {
+      font-size: 38px;
+      line-height: 46px;
+      letter-spacing: -0.54px;
+    }
+    .reason-block:nth-child(1) .reason-content p,
+    .reason-block:nth-child(2) .reason-content p,
+    .reason-block:nth-child(3) .reason-content p,
+    .reason-block:nth-child(4) .reason-content p,
+    .reason-block:nth-child(5) .reason-content p,
+    .reason-block:nth-child(6) .reason-content p {
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0px;
+    }
+    .reason-block:nth-child(2) .reason-content {
+      gap: 14px;
+      padding: 199px 105.06px 199px 104.94px;
+    }
+    .reason-block:nth-child(2) .reason-content h2 {
+      padding-right: 29px;
+    }
+    .reason-block:nth-child(3) .reason-content {
+      gap: 14px;
+      padding: 199px 113.06px 199px 113px;
+    }
+    .reason-block:nth-child(3) .reason-content p,
+    .reason-block:nth-child(4) .reason-content p {
+      font-size: 17.8px;
+    }
+    .reason-block:nth-child(4) .reason-content {
+      gap: 10px;
+      padding: 201px 100px 202px 110px;
+    }
+    .reason-block:nth-child(5) .reason-content {
+      gap: 14px;
+      padding: 199px 121px 199px 120px;
+    }
+    .reason-block:nth-child(6) .reason-content {
+      gap: 10px;
+      padding: 212px 86px 216px 87px;
+    }
+    .reason-block:nth-child(6) .reason-content p {
+      padding-right: 37px;
+    }
   }
 </style>

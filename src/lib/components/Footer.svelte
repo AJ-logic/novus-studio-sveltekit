@@ -1,38 +1,42 @@
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-logo">
-      <img src="/images/logo.png" alt="Logo" class="logo" />
+      <a href="#">
+        <img src="/images/logo.png" alt="Logo" class="logo" />
+      </a>
     </div>
-    <div class="footer-company">
-      <div class="footer-company-title">MIRACLE BRAND LLC</div>
-      <div class="footer-company-grid">
-        <div class="footer-company-col">
-          <p>111 Town Square Place</p>
-          <p>Suite 1203 PMB 1065</p>
-          <p>Jersey City, New Jersey 07310</p>
-        </div>
-        <div class="footer-company-col">
-          <p>1501 Haines St.</p>
-          <p>Jacksonville, FL 32206</p>
-          <p>(888) 683-4875</p>
+    <div class="footer-info-wrap">
+      <div class="footer-company">
+        <div class="footer-company-title">MIRACLE BRAND LLC</div>
+        <div class="footer-company-grid">
+          <div class="footer-company-col">
+            <p>111 Town Square Place</p>
+            <p>Suite 1203 PMB 1065</p>
+            <p>Jersey City, New Jersey 07310</p>
+          </div>
+          <div class="footer-company-col">
+            <p>1501 Haines St.</p>
+            <p>Jacksonville, FL 32206</p>
+            <p>(888) 683-4875</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-info">
-      <div class="footer-info-title">INFO</div>
-      <p class="footer-info-bold">Shipping Information</p>
-      <p>UPS ground 2-7 business days</p>
-      <p class="footer-info-bold">Business Licensing Information</p>
-      <p>EIN: 83-3059849</p>
-    </div>
-    <div class="footer-company-mail-wrap">
-      <p class="footer-company-mail-title">CUSTOMER SUPPORT</p>
-      <p class="footer-company-mail-box">
-        <span class="footer-company-mail-icon">
-          <img src="/images/icons/email.svg" alt="Email" />
-        </span>
-        <span class="footer-company-mail">hello@miraclebrand.co</span>
-      </p>
+      <div class="footer-info">
+        <div class="footer-info-title">INFO</div>
+        <p class="footer-info-bold">Shipping Information</p>
+        <p>UPS ground 2-7 business days</p>
+        <p class="footer-info-bold">Business Licensing Information</p>
+        <p>EIN: 83-3059849</p>
+      </div>
+      <div class="footer-company-mail-wrap">
+        <p class="footer-company-mail-title">CUSTOMER SUPPORT</p>
+        <p class="footer-company-mail-box">
+          <span class="footer-company-mail-icon">
+            <img src="/images/icons/email.svg" alt="Email" />
+          </span>
+          <span class="footer-company-mail">hello@miraclebrand.co</span>
+        </p>
+      </div>
     </div>
   </div>
   <div class="separator"></div>
@@ -75,7 +79,15 @@
     padding: 50px 23.5px 59.45px 25px;
   }
   .footer-logo {
-    margin-bottom: 54px;
+    margin-bottom: 46px;
+  }
+  .footer-logo a {
+    display: inline-block;
+  }
+  .footer-info-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
   }
   .footer-company-title {
     font-size: 12px;
@@ -87,7 +99,6 @@
   .footer-company-grid {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2.8rem;
   }
   .footer-company-col p,
   .footer-info p,
@@ -96,9 +107,6 @@
     font-size: 14px;
     font-weight: 400;
     margin: 6px 0;
-  }
-  .footer-info {
-    margin-bottom: 36px;
   }
   .footer-info-title {
     font-size: 12px;
@@ -114,12 +122,14 @@
     font-weight: 700;
     letter-spacing: 2px;
     font-size: 12px;
+    margin-top: 0px;
     margin-bottom: 8px;
   }
-  .footer-company-mail-box {
+  p.footer-company-mail-box {
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-bottom: 4px;
   }
   .footer-company-mail {
     font-size: 22px;
@@ -167,17 +177,31 @@
     letter-spacing: 0;
   }
   @media (min-width: 600px) {
-    .footer-company-grid {
-      flex-direction: row;
-      gap: 2.5rem;
+    .footer {
+      padding: 66px 164px 35px 165px;
     }
-    .footer-info-grid {
-      flex-direction: row;
-      gap: 2.5rem;
+    .footer-logo {
+      margin-bottom: 54px;
     }
-    .footer-company-col,
-    .footer-info-col {
-      min-width: 200px;
+    .footer-info-wrap {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .footer-company-mail-wrap {
+      text-align: right;
+    }
+    .footer-company-mail-icon {
+      margin-right: 28px;
+    }
+    .separator {
+      margin: 30px 0 28px 0;
+      /* opacity: 0; */
+    }
+    .footer-bottom {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 38.8px;
     }
   }
 </style>
