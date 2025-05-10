@@ -15,7 +15,6 @@ This is a pixel-perfect, responsive landing page built for a UI/UX test task by 
 
 - **Framework**: [SvelteKit](https://kit.svelte.dev/)
 - **Language**: HTML, CSS (scoped), JavaScript
-- **Fonts**: Brandon Grotesque (`.woff2`, self-hosted)
 - **Image Optimization**: `.webp`, compressed with [Squoosh](https://squoosh.app)
 - **Deployment**: [Vercel](https://vercel.com/)
 
@@ -40,23 +39,13 @@ This is a pixel-perfect, responsive landing page built for a UI/UX test task by 
 
 ---
 
-## ✨ Highlights
-
-- **1:1 match with Figma** — Font sizing, spacing, layout all faithfully reproduced.
-- **Componentized architecture** — Hero, Reason blocks, CTA, Footer, etc.
-- **LCP Optimized** — Priority-loaded first visible image with `loading="eager"` and `fetchpriority="high"`.
-- **Fonts & Images Optimized** — All assets served in production-ready format.
-
----
-
-## 🧠 Developer Notes
-
 - Fonts loaded via `@font-face` using `.woff2` with `font-display: swap`.
 - `<meta>` tags include SEO-friendly description, Open Graph, and Twitter cards.
 - `loading="lazy"` added to all non-critical images.
 - `width` and `height` set for all `<img>` elements to avoid layout shifts.
 - `HeroSection`, `ReasonSection`, and `CTASection` are isolated Svelte components.
 - Centralized content via a `reasons.js` data file with props passed into reusable `ReasonSection`.
+- **No duplicated markup** for mobile/desktop; layout is handled with CSS flexbox and media queries.
 
 ---
 
@@ -75,3 +64,31 @@ npm install
 # 4. Run locally
 npm run dev
 ```
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
+
+---
+
+## 🙏 Credits
+
+- [SvelteKit](https://kit.svelte.dev/)
+- [Figma](https://figma.com/)
+- [Novus Studio](https://novus.studio/)
+
+---
+
+## 📬 Contact
+
+For questions, feedback, or collaboration, please contact [your-email@example.com](mailto:your-email@example.com).
+
+---
+
+> **Happy coding! 🚀**

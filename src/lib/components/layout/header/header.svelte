@@ -1,6 +1,11 @@
 <header class="header">
-  <a href="/">
-    <img src="./images/logo.png" alt="Logo" class="logo" />
+  <a href="/" aria-label="Homepage">
+    <img
+      src="/images/logo.png"
+      alt="Miracle Brand Logo"
+      class="logo"
+      loading="eager"
+    />
   </a>
 </header>
 

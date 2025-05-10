@@ -1,3 +1,12 @@
+<script>
+  export let onDownArrowClick = () => {
+    const el = document.getElementById("reasons-section");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+</script>
+
 <section class="hero">
   <div class="hero-image">
     <img
@@ -12,7 +21,12 @@
       NASA-inspired cooling, silver-infused freshness—without the luxury price
       hike.
     </p>
-    <div class="down-arrow"></div>
+    <button
+      class="down-arrow"
+      tabindex="0"
+      aria-label="Scroll to the next section"
+      on:click={onDownArrowClick}
+    ></button>
   </div>
 </section>
 
@@ -61,6 +75,7 @@
     transform: rotate(45deg);
     animation: bounce 1.5s infinite;
     cursor: pointer;
+    outline: none;
   }
   @keyframes bounce {
     0%,

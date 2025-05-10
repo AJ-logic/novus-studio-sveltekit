@@ -1,11 +1,11 @@
 <script>
   export let index;
   export let reason;
-  export let reverse = !(index % 2);
+  export let reverse = !(index % 2) ? "reverse" : "";
 </script>
 
 <div
-  class="reason-block {reverse ? 'reverse' : ''}"
+  class="reason-block {reverse}"
   style="
       --gap: {reason.style?.mobile?.gap};
       --padding: {reason.style?.mobile?.padding};
@@ -13,7 +13,7 @@
       --font-size-h2: {reason.style?.mobile?.h2};
       --font-size-p: {reason.style?.mobile?.p};
       --font-weight-p: {reason.style?.mobile?.pWeight};
-      --image-height: {reason.style?.mobile?.imgHeight};
+      --image-height: {reason.style?.mobile?.imgHeight || '350px'};
       --padding-desktop: {reason.style?.desktop?.padding};
       --gap-desktop: {reason.style?.desktop?.gap};
       --padding-right-h2-desktop: {reason.style?.desktop?.h2PRight};
