@@ -1,9 +1,9 @@
 <script>
-  import Header from "$lib/components/Header.svelte";
+  import Header from "$lib/components/layout/Header.svelte";
   import HeroSection from "$lib/components/HeroSection.svelte";
   import ReasonsSections from "$lib/components/ReasonsSections.svelte";
   import CTASection from "$lib/components/CTASection.svelte";
-  import Footer from "$lib/components/Footer.svelte";
+  import Footer from "$lib/components/layout/Footer.svelte";
 </script>
 
 <Header />

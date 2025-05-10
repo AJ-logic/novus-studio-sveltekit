@@ -1,6 +1,10 @@
 <section class="hero">
   <div class="hero-image">
-    <img src="/images/hero-woman.jpg" alt="Woman sleeping peacefully" />
+    <img
+      src="/images/hero-woman.webp"
+      alt="Woman sleeping peacefully"
+      fetchpriority="high"
+    />
   </div>
   <div class="hero-content">
     <h1>6 Reasons Tariff-Free Sheets Are the Answer to Your Night Sweats</h1>

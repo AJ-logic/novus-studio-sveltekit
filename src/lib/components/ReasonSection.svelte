@@ -1,12 +1,20 @@
 <script>
   export let index;
   export let reason;
-  export let reverse = index % 2 ? false : true;
+  export let reverse = !(index % 2);
 </script>
 
 <div class="reason-block {reverse ? 'reverse' : ''}">
   <div class="reason-image">
-    <img src={reason.image} alt={reason.alt} />
+    <img
+      src={reason.image}
+      alt={reason.alt}
+      loading={index === 0 ? "eager" : "lazy"}
+      fetchpriority={index === 0 ? "high" : "auto"}
+      decoding="async"
+      width="414"
+      height="350"
+    />
   </div>
   <div class="reason-content">
     <h2><span>{index + 1}.</span> {reason.title}</h2>

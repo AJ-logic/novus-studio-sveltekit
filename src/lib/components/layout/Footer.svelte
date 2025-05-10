@@ -1,8 +1,8 @@
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-logo">
-      <a href="#">
-        <img src="/images/logo.png" alt="Logo" class="logo" />
+      <a href="/">
+        <img src="/images/logo.png" alt="Logo" class="logo" loading="lazy" />
       </a>
     </div>
     <div class="footer-info-wrap">
@@ -32,7 +32,7 @@
         <p class="footer-company-mail-title">CUSTOMER SUPPORT</p>
         <p class="footer-company-mail-box">
           <span class="footer-company-mail-icon">
-            <img src="/images/icons/email.svg" alt="Email" />
+            <img src="/images/icons/email.svg" alt="Email" loading="lazy" />
           </span>
           <span class="footer-company-mail">hello@miraclebrand.co</span>
         </p>
@@ -60,11 +60,11 @@
   </div>
   <div class="footer-bottom">
     <div class="footer-links">
-      <a href="#">Privacy Policy</a>
+      <a href="/">Privacy Policy</a>
       <span class="footer-link-sep">|</span>
-      <a href="#">Care Guide</a>
+      <a href="/">Care Guide</a>
       <span class="footer-link-sep">|</span>
-      <a href="#">Terms of Use</a>
+      <a href="/">Terms of Use</a>
     </div>
     <div class="footer-copyright">
       Copyright 2022. Miracle Brand LLC. All rights reserved.

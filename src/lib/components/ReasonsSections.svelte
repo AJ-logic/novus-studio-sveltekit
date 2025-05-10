@@ -1,6 +1,6 @@
 <script>
   import ReasonSection from "$lib/components/ReasonSection.svelte";
-  import { reasons } from "$lib/static/reasons";
+  import { reasons } from "$lib/data/reasons";
 </script>
 
 <section class="reasons-section">

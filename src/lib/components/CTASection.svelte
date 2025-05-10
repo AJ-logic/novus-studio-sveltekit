@@ -15,11 +15,12 @@
         src="/images/cta-product.png"
         alt="Product bundle with towels"
         class="cta-img"
+        loading="lazy"
       />
     </div>
     <button class="cta-btn">
       <span class="checkmark">
-        <img src="/images/icons/check.svg" alt="Check" />
+        <img src="/images/icons/check.svg" alt="Check" loading="lazy" />
       </span> GET YOUR MIRACLE NOW!
     </button>
     <div class="cta-timer-label">DEAL ENDING IN:</div>
@@ -27,7 +28,7 @@
     <div class="cta-meta-row">
       <span class="cta-meta-left">
         <span class="cta-icon">
-          <img src="/images/icons/alert.svg" alt="Alert" />
+          <img src="/images/icons/alert.svg" alt="Alert" loading="lazy" />
         </span>
         <span class="cta-meta-desc">
           Sell-Out Risk:
@@ -37,7 +38,7 @@
       <span class="separator"></span>
       <span class="cta-meta-right">
         <span class="cta-icon delivery">
-          <img src="/images/icons/delivery.svg" alt="Delivery" />
+          <img src="/images/icons/delivery.svg" alt="Delivery" loading="lazy" />
         </span>
         <span class="cta-meta-desc">
           <span class="free-delivery">FREE</span>
@@ -54,6 +55,7 @@
         class="cta-product"
         src="/images/cta-product.png"
         alt="Product bundle with towels"
+        loading="lazy"
       />
     </div>
     <div class="cta-content">
@@ -68,7 +70,7 @@
       </div>
       <button class="cta-btn">
         <span class="checkmark">
-          <img src="/images/icons/check.svg" alt="Check" />
+          <img src="/images/icons/check.svg" alt="Check" loading="lazy" />
         </span> GET YOUR MIRACLE NOW!
       </button>
       <div class="cta-timer-label">DEAL ENDING IN:</div>
@@ -76,7 +78,7 @@
       <div class="cta-meta-row">
         <span class="cta-meta-left">
           <span class="cta-icon">
-            <img src="/images/icons/alert.svg" alt="Alert" />
+            <img src="/images/icons/alert.svg" alt="Alert" loading="lazy" />
           </span>
           <span class="cta-meta-desc">
             Sell-Out Risk:
@@ -86,7 +88,11 @@
         <span class="separator"></span>
         <span class="cta-meta-right">
           <span class="cta-icon delivery">
-            <img src="/images/icons/delivery.svg" alt="Delivery" />
+            <img
+              src="/images/icons/delivery.svg"
+              alt="Delivery"
+              loading="lazy"
+            />
           </span>
           <span class="cta-meta-desc">
             <span class="free-delivery">FREE</span>

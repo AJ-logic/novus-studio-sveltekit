@@ -1,6 +1,6 @@
 <header class="header">
-  <a href="#">
-    <img src="/images/logo.png" alt="Logo" class="logo" />
+  <a href="/">
+    <img src="./images/logo.png" alt="Logo" class="logo" />
   </a>
 </header>
 
@@ -17,7 +17,7 @@
     box-shadow: 0px 2px 4px 0px #00000014;
   }
   .logo {
-    width: 114;
-    height: 26;
+    width: 114px;
+    height: 26px;
   }
 </style>
