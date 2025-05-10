@@ -1,5 +1,5 @@
 <script>
-  import ReasonSection from "$lib/components/ReasonSection.svelte";
+  import ReasonSection from "$lib/components/sections/ReasonSection.svelte";
   import { reasons } from "$lib/data/reasons";
 </script>
 

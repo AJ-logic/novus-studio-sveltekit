@@ -1,46 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-:root {
-  --color-blue: #00227d;
-  --color-light-blue: #e4f2fb;
-  --font-main: "HvDTrial Brandon Grotesque", "Montserrat", "Helvetica Neue",
-    Arial, sans-serif;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-main);
-  color: #000;
-  background: #fff;
-  scroll-behavior: smooth;
-}
-
-img {
-  display: block;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  font-weight: 700;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.page-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0;
-}
+@import "./variables.css";
+@import "./reset.css";
+@import "./base.css";
+@import "./typography.css";
+@import "./layout.css";
+@import "./responsive.css";

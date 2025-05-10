@@ -1,72 +1,23 @@
 <section class="cta-section">
   <!-- Mobile Layout -->
-  <div class="cta-mobile">
-    <div class="cta-headline-offer">
-      <span class="cta-headline">TARIFF-FREE<br />COMFORT SALE</span>
-      <span class="cta-offer">GET 20% OFF NOW</span>
-    </div>
-    <div class="cta-desc">
-      <b>Beat the price hikes</b> and sleep better<br />tonight. This
-      <span class="limited"><b>limited time deal</b></span>
-      is in high<br /> demand and stock keeps selling out.
-    </div>
-    <div class="cta-image-wrap">
-      <img
-        src="/images/cta-product.png"
-        alt="Product bundle with towels"
-        class="cta-img"
-        loading="lazy"
-      />
-    </div>
-    <button class="cta-btn">
-      <span class="checkmark">
-        <img src="/images/icons/check.svg" alt="Check" loading="lazy" />
-      </span> GET YOUR MIRACLE NOW!
-    </button>
-    <div class="cta-timer-label">DEAL ENDING IN:</div>
-    <div class="cta-timer">13:52</div>
-    <div class="cta-meta-row">
-      <span class="cta-meta-left">
-        <span class="cta-icon">
-          <img src="/images/icons/alert.svg" alt="Alert" loading="lazy" />
-        </span>
-        <span class="cta-meta-desc">
-          Sell-Out Risk:
-          <span class="risk-high">High</span>
-        </span>
-      </span>
-      <span class="separator"></span>
-      <span class="cta-meta-right">
-        <span class="cta-icon delivery">
-          <img src="/images/icons/delivery.svg" alt="Delivery" loading="lazy" />
-        </span>
-        <span class="cta-meta-desc">
-          <span class="free-delivery">FREE</span>
-          <span class="shipping">shipping</span>
-        </span>
-      </span>
-    </div>
-  </div>
-
-  <!-- Desktop Layout -->
-  <div class="cta-desktop">
-    <div class="cta-image-wrap">
-      <img
-        class="cta-product"
-        src="/images/cta-product.png"
-        alt="Product bundle with towels"
-        loading="lazy"
-      />
-    </div>
-    <div class="cta-content">
+  <div class="mobile">
+    <div class="cta">
       <div class="cta-headline-offer">
-        <span class="cta-headline">TARIFF-FREE COMFORT SALE</span>
+        <span class="cta-headline">TARIFF-FREE<br />COMFORT SALE</span>
         <span class="cta-offer">GET 20% OFF NOW</span>
       </div>
       <div class="cta-desc">
-        <b>Beat the price hikes</b> and sleep better tonight. This
-        <span class="limited"><b>limited time deal</b></span> is in high demand and
-        stock keeps selling out.
+        <b>Beat the price hikes</b> and sleep better<br />tonight. This
+        <span class="limited"><b>limited time deal</b></span>
+        is in high<br /> demand and stock keeps selling out.
+      </div>
+      <div class="cta-image-wrap">
+        <img
+          src="/images/cta-product.png"
+          alt="Product bundle with towels"
+          class="cta-img"
+          loading="lazy"
+        />
       </div>
       <button class="cta-btn">
         <span class="checkmark">
@@ -96,9 +47,66 @@
           </span>
           <span class="cta-meta-desc">
             <span class="free-delivery">FREE</span>
-            <span class="shipping"> shipping</span>
+            <span class="shipping">shipping</span>
           </span>
         </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktop Layout -->
+  <div class="desktop">
+    <div class="cta">
+      <div class="cta-image-wrap">
+        <img
+          class="cta-product"
+          src="/images/cta-product.png"
+          alt="Product bundle with towels"
+          loading="lazy"
+        />
+      </div>
+      <div class="cta-content">
+        <div class="cta-headline-offer">
+          <span class="cta-headline">TARIFF-FREE COMFORT SALE</span>
+          <span class="cta-offer">GET 20% OFF NOW</span>
+        </div>
+        <div class="cta-desc">
+          <b>Beat the price hikes</b> and sleep better tonight. This
+          <span class="limited"><b>limited time deal</b></span> is in high demand
+          and stock keeps selling out.
+        </div>
+        <button class="cta-btn">
+          <span class="checkmark">
+            <img src="/images/icons/check.svg" alt="Check" loading="lazy" />
+          </span> GET YOUR MIRACLE NOW!
+        </button>
+        <div class="cta-timer-label">DEAL ENDING IN:</div>
+        <div class="cta-timer">13:52</div>
+        <div class="cta-meta-row">
+          <span class="cta-meta-left">
+            <span class="cta-icon">
+              <img src="/images/icons/alert.svg" alt="Alert" loading="lazy" />
+            </span>
+            <span class="cta-meta-desc">
+              Sell-Out Risk:
+              <span class="risk-high">High</span>
+            </span>
+          </span>
+          <span class="separator"></span>
+          <span class="cta-meta-right">
+            <span class="cta-icon delivery">
+              <img
+                src="/images/icons/delivery.svg"
+                alt="Delivery"
+                loading="lazy"
+              />
+            </span>
+            <span class="cta-meta-desc">
+              <span class="free-delivery">FREE</span>
+              <span class="shipping"> shipping</span>
+            </span>
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -113,7 +121,7 @@
     padding: 48px 32px;
     text-align: center;
   }
-  .cta-mobile {
+  .cta {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,9 +129,6 @@
     padding: 43px 25px 33px 24px;
     border-radius: 18px;
     box-shadow: 0px 0px 20px 0px #00000040;
-  }
-  .cta-desktop {
-    display: none;
   }
   .cta-headline-offer {
     display: flex;
@@ -247,19 +252,13 @@
     .cta-section {
       padding: 60px 0;
     }
-    .cta-mobile {
-      display: none;
-    }
-    .cta-desktop {
-      display: flex;
+    .cta {
       flex-direction: row;
-      align-items: center;
       gap: 34px;
       width: 100%;
       max-width: 920px;
       padding: 60px 38px 35px 64px;
       border-radius: 10px;
-      box-shadow: 0px 0px 20px 0px #00000040;
     }
     .cta-image-wrap {
       width: 350px;

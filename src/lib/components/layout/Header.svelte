@@ -20,4 +20,9 @@
     width: 114px;
     height: 26px;
   }
+  @media (min-width: 900px) {
+    .header {
+      height: 60px;
+    }
+  }
 </style>

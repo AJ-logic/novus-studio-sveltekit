@@ -76,7 +76,7 @@
       height: 470px;
     }
     .hero-content {
-      padding: 44px 326px 34px;
+      padding: 44px 326px 40px;
     }
     .hero-content h1 {
       font-size: 38px;
