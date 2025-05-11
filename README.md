@@ -85,10 +85,4 @@ npm run dev
 
 ---
 
-## 📬 Contact
-
-For questions, feedback, or collaboration, please contact [your-email@example.com](mailto:your-email@example.com).
-
----
-
 > **Happy coding! 🚀**
