@@ -2,7 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  filter: blur(0.3px);
   margin: 0;
   padding: 0;
 }
